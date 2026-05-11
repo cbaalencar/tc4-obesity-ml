@@ -19,7 +19,7 @@ Sistema preditivo desenvolvido para auxiliar equipes médicas na classificação
 ├── scaler.pkl                # Scaler para normalização
 ├── feature_metadata.json     # Metadados do pipeline
 ├── requirements.txt          # Dependências
-├── TC4_Obesity.ipynb  # Notebook completo
+├── TC4_Obesity.ipynb         # Notebook completo
 └── Obesity.csv               # Dataset original
 ```
 
