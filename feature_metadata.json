@@ -1,0 +1,98 @@
+{
+  "feature_names": [
+    "Gender",
+    "Age",
+    "Height",
+    "Weight",
+    "family_history",
+    "FAVC",
+    "FCVC",
+    "NCP",
+    "CAEC",
+    "SMOKE",
+    "CH2O",
+    "SCC",
+    "FAF",
+    "TUE",
+    "CALC",
+    "BMI",
+    "MTRANS_Automobile",
+    "MTRANS_Bike",
+    "MTRANS_Motorbike",
+    "MTRANS_Public_Transportation",
+    "MTRANS_Walking"
+  ],
+  "target_classes": [
+    "Insufficient_Weight",
+    "Normal_Weight",
+    "Overweight_Level_I",
+    "Overweight_Level_II",
+    "Obesity_Type_I",
+    "Obesity_Type_II",
+    "Obesity_Type_III"
+  ],
+  "binary_cols": [
+    "family_history",
+    "FAVC",
+    "SMOKE",
+    "SCC",
+    "Gender"
+  ],
+  "scale_cols": [
+    "FCVC",
+    "NCP",
+    "CH2O",
+    "FAF",
+    "TUE"
+  ],
+  "ohe_cols": [
+    "MTRANS_Automobile",
+    "MTRANS_Bike",
+    "MTRANS_Motorbike",
+    "MTRANS_Public_Transportation",
+    "MTRANS_Walking"
+  ],
+  "ordinal_cols": [
+    "CAEC",
+    "CALC"
+  ],
+  "numeric_scaled": [
+    "Age",
+    "Height",
+    "Weight",
+    "BMI"
+  ],
+  "scaler_mean": [
+    24.310726926540283,
+    1.6999979686018958,
+    86.31118481042655,
+    29.67062796208531
+  ],
+  "scaler_std": [
+    6.312499802532345,
+    0.09284700466531323,
+    26.005169481633583,
+    7.981229264795468
+  ],
+  "freq_order": [
+    "no",
+    "Sometimes",
+    "Frequently",
+    "Always"
+  ],
+  "mtrans_categories": [
+    "Automobile",
+    "Bike",
+    "Motorbike",
+    "Public_Transportation",
+    "Walking"
+  ],
+  "modelo_nome": "Random Forest",
+  "acuracia_teste": 0.9811,
+  "f1_macro_teste": 0.9806,
+  "best_params": {
+    "max_depth": 20,
+    "min_samples_split": 2,
+    "n_estimators": 200
+  }
+}
