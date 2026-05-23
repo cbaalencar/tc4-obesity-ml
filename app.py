@@ -114,7 +114,7 @@ with st.sidebar:
     ncp  = st.selectbox("Refeições principais por dia",
                         [1, 2, 3, 4],
                         index=2,
-                        format_func=lambda x: f"{x} refeição{'ões' if x > 1 else ''}")
+                        format_func=lambda x: f"{x} refeição" if x == 1 else f"{x} refeições")
     caec = st.selectbox("Come entre as refeições?",
                         ["no", "Sometimes", "Frequently", "Always"],
                         index=1,
